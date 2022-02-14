@@ -1,6 +1,9 @@
 <template>
   <section class="my-profil-background">
     <router-link to="/OrderHist"></router-link>
+    <router-link to="/NavDropDown">
+      <img src="../assets/navicon.svg" class="navIcon" />
+    </router-link>
     <img src="../assets/ourcoffeetop.svg" />
     <div class="login-container">
       <img src="../assets/myprofilelogo.svg" />
@@ -58,6 +61,9 @@ export default {
   max-width: 375px;
   align-items: center;
   height: 100%;
+}
+.navIcon {
+  margin-right: 15rem;
 }
 .login-container {
   background-color: #f3e4e1;
