@@ -1,5 +1,8 @@
 <template>
   <nav>
+    <a @click="$router.go(-1)" class="closebutton">
+      <img src="../assets/close.svg" />
+    </a>
     <ul>
       <li><router-link to="/KaffeMeny" exact>Menu</router-link></li>
       <li><router-link to="/OurCoffee" exact>OurCoffee</router-link></li>      
@@ -26,13 +29,14 @@ li {
   font-family: serif;
   padding: 3px;
   display: inline-block;
-    margin: 0 10px;
+  margin: 0 10px;
 }
 
 a {
   color: white;
   text-decoration: none;
   line-height: 120%;
+  margin-left: 4rem;
 }
 
 ul li a:hover::before {

@@ -1,6 +1,9 @@
 <template>
   <section>
     <img src="../assets/ourcoffeetop.svg" />
+    <router-link to="/NavDropDown">
+      <img src="../assets/navicon.svg" class="navIcon" />
+    </router-link>
     <div class="container">
       <h1>Vårt kaffe</h1>
       <p>
@@ -68,7 +71,6 @@ p {
 
 div > img {
   width: 100px;
-  padding-top: 50px;
 }
 
 h2 {

@@ -1,7 +1,6 @@
 <template>
- 
   <section class="my-profil-background">
-     <router-link to="/OrderHist"></router-link> 
+    <router-link to="/OrderHist"></router-link>
     <img src="../assets/ourcoffeetop.svg" />
     <div class="login-container">
       <img src="../assets/myprofilelogo.svg" />
@@ -44,8 +43,7 @@ export default {
   methods: {
     onSubmit(profile) {
       this.$store.commit("Add_User", profile);
-       this.$router.push("OrderHist");
-
+      this.$router.push("OrderHist");
     },
   },
 };
@@ -71,7 +69,6 @@ export default {
   height: 100%;
   font-family: sans-serif;
 }
-
 div > img {
   width: 50px;
   align-self: center;
