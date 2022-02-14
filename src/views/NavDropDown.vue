@@ -1,12 +1,15 @@
 <template>
   <nav>
+    <a @click="$router.go(-1)" class="closebutton">
+      <img src="../assets/close.svg" />
+    </a>
     <ul>
       <li><router-link to="/KaffeMeny">Meny</router-link></li>
-      <li><hr /></li>
+      <hr />
       <li><router-link to="/OurCoffee">Vårt Kaffe</router-link></li>
-      <li><hr /></li>
+      <hr />
       <li><router-link to="/OrderHist">Order History</router-link></li>
-      <li><hr /></li>
+      <hr />
       <li><router-link to="/OrderDelivery">Orderstatus</router-link></li>
     </ul>
   </nav>
@@ -31,16 +34,23 @@ li {
   font-size: 1.8rem;
   font-family: serif;
   padding: 3px;
+  margin-right: 5rem;
 }
 
 a {
   color: white;
   text-decoration: none;
   line-height: 120%;
+  margin-left: 4rem;
 }
 
 hr {
-  width: 50px;
+  width: 100px;
   border: 1px solid #595451;
+}
+.closebutton {
+  position: absolute;
+  top: 113px;
+  left: 550px;
 }
 </style>
