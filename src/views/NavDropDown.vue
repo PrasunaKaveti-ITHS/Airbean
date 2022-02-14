@@ -36,7 +36,6 @@ a {
   color: white;
   text-decoration: none;
   line-height: 120%;
-  margin-left: 4rem;
 }
 
 ul li a:hover::before {
@@ -48,6 +47,14 @@ ul li a:hover {
   color: #eeff00;
   box-shadow: 0 0 5px #11cedb;
   text-shadow: 0 0 5px #0ab9ee;
+}
+
+.closebutton {
+  margin-left: 25rem;
+  height: 2rem;
+}
+img {
+  height: 2rem;
 }
 
 </style>
