@@ -2,6 +2,9 @@
   <div>
     <router-link to="/Order"></router-link>
     <img src="../assets/ourcoffeetop.svg" />
+    <router-link to="/NavDropDown">
+      <img src="../assets/navicon.svg" class="navIcon" />
+    </router-link>
     <button class="clickme" @click="toOrder">
       <img src="../assets/bag.svg" />
     </button>
@@ -21,6 +24,7 @@
         <h3>{{ k.price }}kr</h3>
       </div>
     </div>
+    <img src="../assets/ourcoffeebottom.svg" />
   </div>
 </template>
 
@@ -63,6 +67,9 @@ h1 {
   font-size: 42px;
   margin-top: 50px;
 }
+.navIcon {
+  margin-right: 15rem;
+}
 
 h2 {
   font-family: "PT Serif";
@@ -81,4 +88,5 @@ p {
   height: 40px;
   margin-top: 0px;
 }
+
 </style>
