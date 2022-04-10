@@ -1,7 +1,10 @@
 <template>
   <section class="my-profile-history">
+    <router-link to="/NavDropDown">
+      <img src="../assets/navicon.svg" class="IconOrder" />
+    </router-link>
     <img src="../assets/ourcoffeetop.svg" />
-    <img src="../assets/myprofilepicture.svg" />
+    <img src="../assets/myprofilepicture.svg" class="IconProfile" />
     <section v-for="(k, index) in user" :key="index" class="kaffestyle">
       <h2 class="name">{{ k.name }}</h2>
       <h2 class="email">{{ k.email }}</h2>
@@ -58,7 +61,11 @@ export default {
   display: flex;
   flex-direction: column;
 }
-img:last-of-type {
+.IconOrder{
+  margin-right: 300px;
+  margin-top: 10px;
+}
+.IconProfile{
   width: 100px;
   height: 100px;
   align-self: center;

@@ -1,10 +1,9 @@
 <template>
   <section>
     <router-link to="/OrderHist"></router-link> 
-    <span>Ordernummer #</span>
+    <span>Ordernummer XAB{{ random() }}</span>
     <img src="../assets/orderdelivery.svg" />
     <div>
-  
       <h1>Din beställning är på väg!</h1>
       <span> minuter</span>
     </div>
@@ -15,10 +14,13 @@
 <script>
 export default { 
 methods:{
-  Goto_hist(){
-       this.$router.push("OrderHist");
-  }
-}
+    Goto_hist(){
+      this.$router.push("OrderHist");
+      },
+    random() {
+      return Math.floor(Math.random() * 1000000 + 1);
+    }
+}  
 }
 
 </script>
