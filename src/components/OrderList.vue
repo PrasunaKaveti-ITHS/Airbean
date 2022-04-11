@@ -87,6 +87,7 @@ export default {
 }
 .container {
   background-color: #439174;
+  
 }
 
 .kaffestyle {
@@ -147,5 +148,6 @@ button {
   border: none;
   background-color: black;
   color: white;
+  margin-bottom: 2rem;
 }
 </style>

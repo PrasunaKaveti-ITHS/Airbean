@@ -60,6 +60,7 @@ export default {
   height: 100%;
   display: flex;
   flex-direction: column;
+  margin-bottom: 2rem;
 }
 .IconOrder{
   margin-right: 300px;

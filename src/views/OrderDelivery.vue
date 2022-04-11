@@ -5,7 +5,7 @@
     <img src="../assets/orderdelivery.svg" />
     <div>
       <h1>Din beställning är på väg!</h1>
-      <span> minuter</span>
+      <span> 15 minuter</span>
     </div>
     <button @click="Goto_hist">Ok, cool!</button>
   </section>
