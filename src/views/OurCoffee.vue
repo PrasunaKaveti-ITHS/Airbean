@@ -39,6 +39,11 @@
 </template>
 
 <style scoped>
+
+.navIcon {
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+}
 section {
   display: flex;
   flex-direction: column;

@@ -11,8 +11,6 @@ import OrderList from '@/components/OrderList.vue'
 export default {
   components: { OrderList },
  
-  
-
 }
 </script>
 

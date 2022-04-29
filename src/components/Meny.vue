@@ -27,8 +27,8 @@
     <img src="../assets/ourcoffeebottom.svg" />
   </div>
 </template>
-
 <script>
+
 export default {
   computed: {
     abc() {

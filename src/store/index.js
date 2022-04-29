@@ -52,7 +52,7 @@ export default new Vuex.Store({
     Order: [],
     User: [],
     History: [],
-
+    OrderNumber: [5235632, 3235633, 7235632, 5235631, 3235632, 7235631, 5235634, 3235631, 7235634 ]
   },
   getters: {
     kaffe: state => {
@@ -66,6 +66,9 @@ export default new Vuex.Store({
     },
     history: state => {
       return state.History;
+    },
+    orderno: state => {
+      return state.OrderNumber;
     }
   },
   mutations: {
@@ -75,7 +78,6 @@ export default new Vuex.Store({
         nameObj.amount += 1
       }
       else {
-
         state.Order.push(payload)
       }
     },

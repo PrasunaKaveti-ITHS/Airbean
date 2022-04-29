@@ -1,9 +1,9 @@
 <template>
   <section class="my-profil-background">
-    <router-link to="/OrderHist"></router-link>
     <router-link to="/NavDropDown">
-      <img src="../assets/navicon.svg" class="navIcon" />
+      <img src="../assets/navicon.svg" class="IconNavigation" />
     </router-link>
+    <router-link to="/OrderHist"></router-link>
     <img src="../assets/ourcoffeetop.svg" />
     <div class="login-container">
       <img src="../assets/myprofilelogo.svg" />
@@ -53,6 +53,10 @@ export default {
 </script>
 
 <style scoped>
+.IconNavigation {
+  margin-right: 19rem;
+  margin-top: 0.5rem;
+}
 .my-profil-background {
   display: flex;
   flex-direction: column;

@@ -2,7 +2,7 @@
   <div id="app">
     <div id="nav">
       <router-link to="/"></router-link>
-      <router-link to="/NavDropDown">Navigation</router-link>
+      <!-- <router-link to="/NavDropDown">Navigation</router-link> -->
     </div>
     <router-view />
   </div>
@@ -16,15 +16,11 @@ export default {};
   text-align: center;
   background-color: #f3e4e1;
   color: #2f2926;
-  width: 457px;
-  min-height: 715px;
+  width: 375px;
+  min-height: 600px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-}
-
-#nav {
-  padding: 20px;
 }
 
 #nav a {

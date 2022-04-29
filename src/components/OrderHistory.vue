@@ -1,10 +1,10 @@
 <template>
   <section class="my-profile-history">
-    <img src="../assets/ourcoffeetop.svg" />
     <router-link to="/NavDropDown">
-      <img src="../assets/navicon.svg" class="navIcon" />
+      <img src="../assets/navicon.svg" class="IconOrder" />
     </router-link>
-    <img src="../assets/myprofilepicture.svg" class="profilImg" />
+    <img src="../assets/ourcoffeetop.svg" />
+    <img src="../assets/myprofilepicture.svg" class="IconProfile" />
     <section v-for="(k, index) in user" :key="index" class="kaffestyle">
       <h2 class="name">{{ k.name }}</h2>
       <h2 class="email">{{ k.email }}</h2>
@@ -14,7 +14,7 @@
       <h3>Orderhistorik</h3>
       <section class="display">
         <section>
-          <h2 class="randnum">#ABC{{ random() }}</h2>
+          <h2 class="ordernum">#XAB{{orderno[index]}}</h2>
           <p>Total ordersumma</p>
           <hr class="leftLine" />
         </section>
@@ -42,11 +42,14 @@ export default {
     user() {
       return this.$store.getters.user;
     },
+    orderno() {
+      return this.$store.getters.orderno;
+    },
   },
   methods: {
-    random() {
-      return Math.floor(Math.random() * 1000000 + 1);
-    },
+    // random() {
+    //   return Math.floor(Math.random() * 1000000 + 1);
+    // },
     sum(total, num) {
       return total + num;
     },
@@ -61,10 +64,15 @@ export default {
   height: 100%;
   display: flex;
   flex-direction: column;
+  margin-bottom: 2rem;
 }
-.profilImg {
-  width: 6rem;
-  height: 6rem;
+.IconOrder{
+  margin-right: 300px;
+  margin-top: 10px;
+}
+.IconProfile{
+  width: 100px;
+  height: 100px;
   align-self: center;
   padding: 1rem;
 }
@@ -108,7 +116,7 @@ h3 {
   padding: 0;
   text-align: left;
 }
-.randnum {
+.ordernum {
   font-family: "Work Sans";
   font-size: 14px;
 }

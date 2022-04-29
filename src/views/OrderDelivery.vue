@@ -1,12 +1,11 @@
 <template>
   <section>
     <router-link to="/OrderHist"></router-link> 
-    <span>Ordernummer #</span>
+    <span>Ordernummer #XAB{{orderno[0]}}</span>
     <img src="../assets/orderdelivery.svg" />
     <div>
-  
       <h1>Din beställning är på väg!</h1>
-      <span> minuter</span>
+      <span> 15 minuter</span>
     </div>
     <button @click="Goto_hist">Ok, cool!</button>
   </section>
@@ -14,11 +13,19 @@
 
 <script>
 export default { 
+ computed: {
+    orderno() {
+      return this.$store.getters.orderno;
+    },
+  },
 methods:{
-  Goto_hist(){
-       this.$router.push("OrderHist");
-  }
-}
+    Goto_hist(){
+      this.$router.push("OrderHist");
+      },
+    // random() {
+    //   return Math.floor(Math.random() * 1000000 + 1);
+    // }
+}  
 }
 
 </script>

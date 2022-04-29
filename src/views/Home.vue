@@ -29,7 +29,7 @@ export default {
   justify-content: center;
   min-height: 500px;
   background-color: #0e927d;
-  max-width: 457px;
+  max-width: 390px;
 }
 
 .left {
